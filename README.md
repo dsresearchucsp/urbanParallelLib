@@ -2,7 +2,7 @@
 
 Analiza datos de criminalidad usando MapReduce en GPU para identificar los nodos de red con mayor incidencia criminal.
 
-## Cómo Funciona
+## Funcionamiento
 
 El programa implementa MapReduce en CUDA con tres fases:
 
@@ -13,7 +13,11 @@ El programa implementa MapReduce en CUDA con tres fases:
 ## Archivos Requeridos
 
 **crime_locations.csv**
+**edges_with_nodes.csv**
+## Uso
 
-Latitude,Longitude
-40.7589,-73.9851
-40.7614,-73.9776
+### Compilar
+nvcc -o crime_analyzer main.cu
+
+### Ejecutar
+./crime_analyzer
